@@ -1,6 +1,11 @@
 // Given an array of strings, use a function to reverse all the elements in the string 
 // in ascending order and the specific elements in descending order
-
+function decend(array) {
+  let arrayDecend=array.sort()
+  return arrayDecend
+}
+let array=[50,76,45,9,32,1,4]
+console.log(decend(array))
 
 
 // Given an array of objects, each object representing a person with a name and age property, 
@@ -11,10 +16,6 @@ const people = [
   { name: 'Charlie', age: 14 },
   { name: 'Max', age: 19 },
 ];
-// let sum=0
-// let age=people.map(item=>item.age)
-// let su
-// console.log(age);
 function sumOfAge(people) {
   let sum = 0;
   for (let i = 0; i < people.length; i++) {
@@ -29,7 +30,6 @@ console.log(sumOfAge(people))
 // Using JS functions and an array of numbers, return positive if an element within the array is positive, 
 // negative if an element is negative, else zero
 function positiveNevgative(numbe) {
-
   if (numbe>=0) {
     return "positive"
   }
